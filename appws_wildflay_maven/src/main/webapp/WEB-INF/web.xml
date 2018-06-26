@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"          
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"          
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee           
+							http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"          
+		version="3.1"> 
+
+ 
+ <servlet>
+ 	<servlet-name>CalcularWS</servlet-name>
+ 	<servlet-class>br.csi.ws.CalcularImpl</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>CalcularWS</servlet-name>
+ 	<url-pattern>/CalcularWS/</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ 	<servlet-name>CarroWS</servlet-name>
+ 	<servlet-class>br.csi.ws.CarroWSImpl</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>CarroWS</servlet-name>
+ 	<url-pattern>/CarroWS/</url-pattern>
+ </servlet-mapping>
+ 
+ 
+  <display-name>Archetype Created Web Application</display-name>
+</web-app>
